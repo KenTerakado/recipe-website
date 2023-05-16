@@ -6,12 +6,16 @@
   </head>
   <body>
     <header>
-      <h1 >Kenny's Recipes</h1>
       <nav>
-        <label for="menu">Menu</label>
-          <a href="recipe-1.html"><button>Apple Pie</button></a>
-          <a href="recipe-2.html"><button>Chicken Alfredo</button></a>
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
       </nav>
+      <h1 >Kenny's Recipes</h1>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="home.html">Home</a>
+        <a href="recipe-1.html">Apple Pie</a>
+        <a href="recipe-2.html">Chicken Alfredo</a>
+      </div>
     </header>
     <main>
       <section class="top">
@@ -41,5 +45,12 @@
     if (selectedOption !== "") {
       window.location.href = selectedOption
     }
+  }
+  function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
   }
 </script>
