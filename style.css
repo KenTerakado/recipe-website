@@ -7,9 +7,12 @@ body {
 }
 
 header {
-  background-color: #333;
+  position: fixed;
+  width: 100%;
+  top: 0;
   color: white;
-  padding: 25px;
+  padding: 10px;
+  box-shadow: 0px 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -39,18 +42,19 @@ a {
 
 main {
   margin: 20px;
+  padding-top: 40px;
 }
 
 section {
   margin-bottom: 30px;
 }
 
-h2 {
-  font-size: 24px;
+h1 {
+  text-align: center;
 }
 
-ul, ol {
-  margin-left: 20px;
+h2 {
+  font-size: 24px;
 }
 
 footer {
@@ -59,28 +63,14 @@ footer {
   padding: 10px;
 }
 
-.sidebar {
-  position: fixed;
-  left: 0;
-  top: 100px;
-  width: 200px;
-  height: calc(100% - 100px);
-  background-color: #850c0c;
+.content {
+  border:1px solid #ddd;
 }
 
-.pageNav {
- float: right; 
-}
-
-.sidebar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.sidebar li {
-  margin: 0;
-  padding: 0;
+.image {
+  margin-top: 20px;
+  border:1px solid #ddd;
+  height:300px"
 }
 
 .sidebar a {
@@ -101,4 +91,59 @@ footer {
   background-color: rgb(59, 145, 116);
   border-radius:20px;
   color:white
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #3b3939;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  margin-right: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  font-size: 36px;
+  margin-left: 0px;
+}
+
+.menuNav {
+  font-size:30px;
+  cursor:pointer
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.content {
+  width: 600px;
 }

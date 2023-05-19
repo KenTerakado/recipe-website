@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kenny's Recipes</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+          <span class="menuNav" onclick="openNav()"><span class="menu-icon">&#9776; Menu</span></span>
+      </nav>
+      <h1>Kenny's Recipes</h1>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span class="x-symbol">&times;</span></a>
+        <a href="index.html">Home</a>
+        <a href="/recipes/apple-pie">Apple Pie</a>
+        <a href="/recipes/chicken-alfredo/">Chicken Alfredo</a>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="flex-container">
+          <div class="content">
+              <h2 id="home">Welcome to my webpage!</h2>
+                  <p>This is a recipes website that has some of my favorite recipes I make when I have time or want to wind down and relax. Please find a recipe that you would like to make from the menu bar and give it a try!
+              </p>
+          </div>
+          <div class="image">
+            <img src="food_ingredients.jpeg" alt="ingredients" id="home_img">
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Kenny's Recipes. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
+<script src="scripting/nav.js"></script>
+<script src="/scripting/headerGradient.js"></script>

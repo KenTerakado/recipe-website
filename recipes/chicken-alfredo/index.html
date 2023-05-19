@@ -2,19 +2,20 @@
 <html>
   <head>
     <title>Kenny's Recipes</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../../../style.css">
   </head>
   <body>
     <header>
-      <h1>Chicken Alfredo</h1>
       <nav>
-        <label for="menu">Menu</label>
-        <a href="home.html"><button>Home</button></a>
-        <ul class="pageNav">
-          <li><a href="#ingredients">Ingredients</a></li>
-          <li><a href="#directions">Directions</a></li>
-        </ul>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
       </nav>
+      <h1>Chicken Alfredo</h1>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../../../index.html">Home</a>
+        <a href="/recipes/apple-pie/">Apple Pie</a>
+        <a href="/recipes/chicken-alfredo/">Chicken Alfredo</a>
+      </div>
     </header>
     <main>
       <section id="ingredients">
@@ -39,32 +40,27 @@
           <li>
             <h3>Step 1</h3>
             <p>In a large skillet over medium-high heat, heat oil.</p>
-          </li>
+          </li><br>
           <li>
             <h3>Step 2</h3>
             <p>Add chicken and season with salt and pepper. Cook until golden and cooked through, 8 minutes per side. Let rest 10 minutes, then slice.</p>
-          </li>
-          <br>
+          </li><br>
           <li>
             <h3>Step 3</h3>
             <p>Add milk, broth, and garlic to skillet.</p>
-          </li>
-          <br>
+          </li><br>
           <li>
             <h3>Step 4</h3>
             <p>Season with salt and pepper and bring to a simmer.</p>
-          </li>
-          <br>
+          </li><br>
           <li>
             <h3>Step 5</h3>
             <p>Add fettuccine, stirring frequently for about 3 minutes. Let cook until al dente, 8 minutes more.</p>
-          </li>
-          <br>
+          </li><br>
           <li>
             <h3>Step 6</h3>
             <p>Stir in heavy cream and Parmesan until combined. Simmer until sauce thickens.</p>
-          </li>
-          <br>
+          </li><br>
           <li>
             <h3>Step 7</h3>
             <p>Remove from heat and stir in sliced chicken. Garnish with parsley.</p>
@@ -77,3 +73,5 @@
     </footer>
   </body>
 </html>
+<script src="/scripting/nav.js"></script>
+<script src="/scripting/headerGradient.js"></script>
