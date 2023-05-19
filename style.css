@@ -63,6 +63,16 @@ footer {
   padding: 10px;
 }
 
+.content {
+  border:1px solid #ddd;
+}
+
+.image {
+  margin-top: 20px;
+  border:1px solid #ddd;
+  height:300px"
+}
+
 .sidebar a {
   display: block;
   padding: 10px 20px;
@@ -118,7 +128,23 @@ footer {
   margin-left: 0px;
 }
 
+.menuNav {
+  font-size:30px;
+  cursor:pointer
+}
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.content {
+  width: 600px;
+
 }
